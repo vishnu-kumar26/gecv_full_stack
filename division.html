@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Divs with Different Colors</title>
+    <style>
+        /* Outer Div Styling */
+        .outer-div {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgb(222, 222, 146);
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .outer-div p {
+            font-size: 20px;
+            color: #491818;
+            font-weight: bold;
+        }
+
+        /* First Nested Div Styling */
+        .nested-div-1 {
+            background-color: yellow;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        .nested-div-1 p {
+            color: white;
+            font-size: 18px;
+        }
+
+        /* Second Nested Div Styling */
+        .nested-div-2 {
+            background-color: pink;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        .nested-div-2 p {
+            color: rgb(7, 9, 7);
+            font-size: 18px;
+        }
+
+        /* Third Nested Div Styling */
+        .nested-div-3 {
+            background-color: orange;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+
+        .nested-div-3 p {
+            color: rgb(51, 17, 4);
+            font-size: 18px;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: GREEN;
+            color: rgb(65, 37, 3);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer h3 {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="outer-div">
+        <p>My Name is Vishnu Kumar.</p>
+        <div class="nested-div-1">
+            <p>I am B.Tech (CSE-IOT) Student.</p>
+            <div class="nested-div-2">
+                <p>My College Name: Govt Engg College , Vaishali , Bihar.</p>
+                <div class="nested-div-3">
+                    <p>My Aim is a Perfect Software Engg .</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3>Developed By VISHNU KUMAR.</h3>
+    </footer>
+
+</body>
+</html>
