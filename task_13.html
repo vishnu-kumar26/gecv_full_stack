@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Questions</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h2 { color: #2c3e50; }
+    pre { background: #f4f4f4; padding: 10px; border-radius: 5px; }
+    .output { margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Program Solutions</h1>
+
+  <div class="output">
+    <h2>1. Print Name and Address</h2>
+    <pre id="q1"></pre>
+  </div>
+
+  <div class="output">
+    <h2>2. Check Value and Data-Type</h2>
+    <pre id="q2"></pre>
+  </div>
+
+  <div class="output">
+    <h2>3. Add Two Strings in Uppercase</h2>
+    <pre id="q3"></pre>
+  </div>
+
+  <div class="output">
+    <h2>4. Convert String Length to Bytes</h2>
+    <pre id="q4"></pre>
+  </div>
+
+  <div class="output">
+    <h2>5. Round a Number to Specific Digits</h2>
+    <pre id="q5"></pre>
+  </div>
+
+  <script>
+    // 1. Print Name and Address
+    const name = "Vishnu";
+    const address = "Vaishali , Bihar , India";
+    document.getElementById("q1").textContent = `Name: ${name}\nAddress: ${address}`;
+
+    // 2. Check Value and Data-Type
+    let a = "2345";
+    let b = 2345;
+    let areSame = (a === b);
+    document.getElementById("q2").textContent = `a = ${a} (${typeof a}), b = ${b} (${typeof b})
+Are value and data-type same? ${areSame}`;
+
+    // 3. Add Two Strings in Uppercase
+    let str1 = "hello !!";
+    let str2 = "world";
+    let combined = (str1 + str2).toUpperCase();
+    document.getElementById("q3").textContent = `Combined String: ${combined}`;
+
+    // 4. Convert String Length to Bytes
+    function stringToBytes(str) {
+      return new TextEncoder().encode(str).length;
+    }
+    let testStr = "Hello";
+    document.getElementById("q4").textContent = `String: '${testStr}'
+Bytes: ${stringToBytes(testStr)}`;
+
+    // 5. Round Number to Specific Digits
+    function roundTo(num, digits) {
+      return Number(num.toFixed(digits));
+    }
+    let original = 12.34567;
+    let rounded = roundTo(original, 3);
+    document.getElementById("q5").textContent = `Original: ${original}
+Rounded to 3 digits: ${rounded}`;
+  </script>
+</body>
+</html>
