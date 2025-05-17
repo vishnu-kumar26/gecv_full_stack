@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Webpage with Four Sections</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cd8989;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: wrap; /* Optional: Wrap on small screens */
+        }
+
+        .box {
+            background-color: #e16e6e;
+            width: 200px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 50px rgba(13, 16, 194, 0.1);
+        }
+
+        .box img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align:center;">Welcome to My Website</h1>
+
+<div class="container">
+    <!-- Home Section -->
+    <div class="box">
+        <img src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" alt="Home Icon">
+        <h3>Home</h3>
+    </div>
+
+    <!-- About Section -->
+    <div class="box">
+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="About Icon">
+        <h3>About</h3>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="box">
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" alt="Gallery Icon">
+        <h3>Gallery</h3>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="box">
+        <img src="https://cdn-icons-png.flaticon.com/512/725/725643.png" alt="Contact Icon">
+        <h3>Contact</h3>
+    </div>
+</div>
+
+</body>
+</html>
